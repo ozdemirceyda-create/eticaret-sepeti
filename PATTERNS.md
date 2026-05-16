@@ -62,6 +62,7 @@ gibi sade metodlar çağırıyor. Sistemin iç karmaşıklığı gizlendi.
 
 Önce: Sepet, Factory, Dekoratör nesnelerini ayrı ayrı yönetmek gerekiyordu
 Sonra: Sepet
+ phase-3-fixed
 
 
 ## FAZ 3 — Behavioral Örüntüler
@@ -94,3 +95,4 @@ yazmak yeterli. Geri alma özelliği tüm komutlarda otomatik çalışıyor.
 
 Önce: İşlemleri geri almak mümkün değildi
 Sonra: son_islemi_geri_al() ile son komut geri alınabiliyor
+ main
