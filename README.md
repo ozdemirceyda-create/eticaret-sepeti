@@ -1,3 +1,12 @@
+## Konu Seçimi: D — E-Ticaret Sepeti
+
+Bu konuyu seçmemin nedeni, indirim hesaplama mantığının sepet sınıfına
+gömülü olması gerçek bir yazılım sorununu temsil etmesidir. Yeni indirim
+kuralı ekledikçe mevcut kodun bozulması, tasarım örüntülerinin neden
+gerekli olduğunu somut olarak göstermektedir. Bu sorunu Factory, Strategy,
+Decorator ve diğer örüntülerle adım adım çözmek öğretici bir deneyim oldu.
+
+
 # E-Ticaret Sepeti — Tasarım Örüntüleri Ödevi
 
 Bu proje, yazılım tasarım örüntülerini gerçek bir e-ticaret sepeti
