@@ -62,3 +62,37 @@ gibi sade metodlar çağırıyor. Sistemin iç karmaşıklığı gizlendi.
 
 Önce: Sepet, Factory, Dekoratör nesnelerini ayrı ayrı yönetmek gerekiyordu
 Sonra: Sepet
+ phase-3-fixed
+
+
+## FAZ 3 — Behavioral Örüntüler
+
+### 5. Observer Pattern
+
+Nerede kullandım: src/gozlemciler.py — SepetYayinci ve Gozlemci sınıfları
+
+Neden kullandım: Sepete ürün eklendiğinde veya sipariş tamamlandığında
+stok, bildirim ve log servislerinin haberdar olması gerekiyordu. Hepsini
+tek tek çağırmak yerine Observer Pattern ile yayıncı-abone sistemi kurdum.
+
+Ne kazandım: Yeni bir servis eklemek için sadece yeni bir Gozlemci sınıfı
+yazıp kaydetmek yeterli. Mevcut koda hiç dokunmuyorum. OCP sağlandı.
+
+Önce: servis.urun_ekle() içinde stok.guncelle(), bildirim.guncelle() tek tek çağrılırdı
+Sonra: yayinci.bildir() hepsini otomatik haberdar ediyor
+
+
+### 6. Command Pattern
+
+Nerede kullandım: src/komutlar.py — Komut sınıfı ve KomutYoneticisi
+
+Neden kullandım: Sepete ürün ekleme ve indirim uygulama işlemlerini geri
+alabilmek istedim. Command Pattern ile her işlem bir nesneye dönüştü,
+KomutYoneticisi geçmişi tutarak geri alma özelliği sağladı.
+
+Ne kazandım: Yeni bir işlem eklemek için sadece yeni bir Komut sınıfı
+yazmak yeterli. Geri alma özelliği tüm komutlarda otomatik çalışıyor.
+
+Önce: İşlemleri geri almak mümkün değildi
+Sonra: son_islemi_geri_al() ile son komut geri alınabiliyor
+ main
