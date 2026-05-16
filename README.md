@@ -43,9 +43,18 @@ Command Pattern — src/komutlar.py
 Her işlem bir komut nesnesine dönüştürüldü. KomutYoneticisi geçmişi
 tutarak geri alma özelliği sağlıyor.
 
+
 ## Mimari Diyagram
 
-docs/diagrams/ klasöründe her örüntü için ayrı UML diyagramı bulunmaktadır.
+![Mimari Diyagram](docs/diagrams/strategy.png)
+
+Tüm UML diyagramları docs/diagrams/ klasöründe bulunmaktadır:
+- faz1-strategy-uml.png — Strategy Pattern
+- faz1-factory-uml.png — Factory Pattern
+- docs/diagram/decorator.png — Decorator Pattern
+- docs/diagram/facade.png — Facade Pattern
+- faz3-observer-uml.png — Observer Pattern
+- faz3-command-uml.png — Command Pattern
 
 ## Proje Yapısı
 
